@@ -6,7 +6,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -46,10 +45,9 @@
 &kp TAB         &kp Q   &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y          &kp U   &kp I      &kp O    &kp P     &kp LEFT_BRACKET
 &kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LCTRL       &kp Z   &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
-&kp C_MUTE      &to 2   &kp LEFT_GUI  &kp LEFT_ALT  &to 1   &kp SPACE    &kp ENTER        &kp BACKSPACE  &to 2   &kp ENTER  &trans   &trans
+&kp C_MUTE      &to 2   &kp LEFT_GUI  &kp LEFT_ALT  &to 1   &kp SPACE    &kp LS(K_MUTE)   &kp BACKSPACE  &to 2   &kp ENTER  &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
             display-name = "LAYER0";
         };
 
@@ -68,11 +66,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE       &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans         &trans  &trans            &trans             &trans         &trans
+&kp TAB         &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5    &mmv MOVE_DOWN   &trans         &trans  &kp F11           &kp F12            &trans         &kp NON_US_BACKSLASH
+&kp LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &mmv MOVE_LEFT   &trans         &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT
+&kp LCTRL       &kp SEMI      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL       &mmv MOVE_RIGHT  &trans         &trans  &kp COMMA         &kp PERIOD         &kp SLASH      &trans
+&trans          &trans        &kp LEFT_WIN      &kp LEFT_ALT       &to 0         &kp SPACE       &mkp LCLK        &kp BACKSPACE  &to 0   &kp ENTER         &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
