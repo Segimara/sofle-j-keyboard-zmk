@@ -184,8 +184,8 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LEFT WIN, type: held}
+  - LEFT WIN
+  - {type: held}
   - $$mdi:apple-keyboard-option$$
   - {t: LAYER0, h: toggle}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
