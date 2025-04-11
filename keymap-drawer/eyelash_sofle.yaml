@@ -137,7 +137,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '&msc MOVE_Y(10)'
+  - $$mdi:pan-up$$
   - '6'
   - '7'
   - '8'
@@ -150,7 +150,7 @@ layers:
   - '3'
   - '4'
   - '5'
-  - '&msc MOVE_Y(-10)'
+  - $$mdi:pan-down$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -163,7 +163,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&msc MOVE_X(-10)'
+  - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
@@ -176,7 +176,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - '&msc MOVE_X(10)'
+  - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ',', s: <}
