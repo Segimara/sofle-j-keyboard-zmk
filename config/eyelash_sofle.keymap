@@ -70,7 +70,7 @@
 &kp TAB         &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5    &msc MOVE_Y(-10)  &trans         &trans        &trans            &trans             &trans         &kp NON_US_BACKSLASH
 &kp LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &msc MOVE_X(-10)  &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT
 &kp LCTRL       &kp SEMI      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL       &msc MOVE_X(10)   &trans         &trans        &kp COMMA         &kp PERIOD         &kp SLASH      &trans
-&trans          &trans        &kp LEFT_WIN      &kp LEFT_ALT       &to 0         &kp SPACE       &mkp LCLK         &kp BACKSPACE  &to 0         &kp ENTER         &trans             &trans
+&trans          &kp LEFT_WIN  &trans            &kp LEFT_ALT       &to 0         &kp SPACE       &mkp LCLK         &kp BACKSPACE  &to 0         &kp ENTER         &trans             &trans
             >;
         };
 
