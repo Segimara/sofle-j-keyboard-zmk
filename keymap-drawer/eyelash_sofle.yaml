@@ -59,7 +59,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: layer1, h: toggle}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PLAY PAUSE
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '2', h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
@@ -124,7 +124,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: LAYER0, h: toggle}
   - {t: '$$mdi:keyboard-space$$', h: '2'}
-  - CALC
+  - CALCULATOR
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LAYER0, h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
