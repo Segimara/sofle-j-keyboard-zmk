@@ -57,14 +57,14 @@ layers:
   - LEFT WIN
   - '2'
   - $$mdi:apple-keyboard-option$$
-  - {t: layer1, h: toggle}
   - $$mdi:keyboard-space$$
+  - {t: layer1, h: toggle}
   - PLAY PAUSE
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '2', h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '&studio_unlock'
-  - '&soft_off'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   layer1:
   - {t: '`', s: '~'}
   - F1
@@ -117,7 +117,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '3'
   - $$mdi:volume-off$$
   - LEFT WIN
   - '2'
@@ -128,7 +128,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LAYER0, h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '3'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
   - {t: '`', s: '~'}
@@ -247,7 +247,7 @@ layers:
   - RGB BRD
   - RGB EFF
   - RGB EFR
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -258,5 +258,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
