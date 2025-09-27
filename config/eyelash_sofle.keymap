@@ -54,8 +54,8 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE       &kp F1        &kp F2          &kp F3          &kp F4           &kp F5         &trans            &kp F6         &kp F7   &kp F8     &kp F9  &kp F10  &kp PRINTSCREEN
-&kp ESCAPE      &trans        &kp DEL         &kp UP_ARROW    &kp BACKSPACE    &kp ENTER      &trans            &kp F11        &kp F12  &trans     &trans  &trans   &kp SCROLLLOCK
+&kp ESCAPE      &kp F1        &kp F2          &kp F3          &kp F4           &kp F5         &trans            &kp F6         &kp F7   &kp F8     &kp F9  &kp F10  &kp PRINTSCREEN
+&kp TAB         &trans        &kp DEL         &kp UP_ARROW    &kp BACKSPACE    &kp ENTER      &trans            &kp F11        &kp F12  &trans     &trans  &trans   &kp SCROLLLOCK
 &kp LEFT_SHIFT  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME       &trans            &kp END        &trans   &trans     &trans  &trans   &trans
 &kp LCTRL       &kp Z         &kp X           &kp C           &kp V            &trans         &trans            &trans         &trans   &trans     &trans  &trans   &mo 3
 &kp C_MUTE      &kp LEFT_WIN  &mo 2           &kp LEFT_ALT    &to 0            &lt 2 SPACE    &kp K_CALCULATOR  &kp BACKSPACE  &to 0    &kp ENTER  &trans  &trans
