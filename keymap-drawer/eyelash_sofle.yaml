@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  LAYER0:
+  Def:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - \
+  - '&printscritDT'
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -55,17 +55,17 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:volume-off$$
   - LEFT WIN
-  - '2'
+  - Symb
   - $$mdi:apple-keyboard-option$$
-  - {t: layer1, h: toggle}
+  - {t: Func, h: toggle}
   - $$mdi:keyboard-space$$
   - PLAY PAUSE
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '2', h: toggle}
+  - {t: Symb, h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  layer1:
+  Func:
   - $$mdi:keyboard-esc$$
   - F1
   - F2
@@ -79,38 +79,38 @@ layers:
   - F9
   - F10
   - PRINTSCREEN
-  - $$mdi:keyboard-tab$$
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:arrow-up-bold$$
+  - F5
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - SCROLLLOCK
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - F9
   - F10
+  - F11
+  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - HOME
-  - {t: '$$mdi:transfer$$', type: trans}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Ctl+B
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -119,18 +119,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '3'
   - $$mdi:volume-off$$
-  - LEFT WIN
-  - '2'
-  - $$mdi:apple-keyboard-option$$
-  - {t: LAYER0, h: toggle}
-  - {t: '$$mdi:keyboard-space$$', h: '2'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Def, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Def, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   - CALCULATOR
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: LAYER0, h: toggle}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Def, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  - {t: '$$mdi:transfer$$', type: trans}
+  Symb:
   - {t: '`', s: '~'}
   - Sft+!
   - Sft+@
@@ -185,13 +185,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: Def, h: toggle, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Def, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Def, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,6 +260,71 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  layer1:
+  - $$mdi:keyboard-esc$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - PRINTSCREEN
+  - $$mdi:keyboard-tab$$
+  - F12
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F11
+  - F12
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - SCROLLLOCK
+  - $$mdi:apple-keyboard-shift$$
+  - F10
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - HOME
+  - {t: '$$mdi:transfer$$', type: trans}
+  - END
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '3'
+  - $$mdi:volume-off$$
+  - LEFT WIN
+  - {t: Def, h: toggle}
+  - $$mdi:apple-keyboard-option$$
+  - {t: Def, h: toggle}
+  - $$mdi:keyboard-space$$
+  - CALCULATOR
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: Def, h: toggle}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   '5':
   - {t: '`', s: '~'}
   - '1'
@@ -317,11 +382,11 @@ layers:
   - LEFT WIN
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
-  - {t: LAYER0, h: toggle}
+  - {t: Def, h: toggle}
   - $$mdi:keyboard-space$$
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: LAYER0, h: toggle}
+  - {t: Def, h: toggle}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
