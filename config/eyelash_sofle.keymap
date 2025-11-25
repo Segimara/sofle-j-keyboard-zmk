@@ -54,11 +54,11 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE      &kp F1        &kp F2          &kp F3          &kp F4           &kp F5         &trans            &kp F6         &kp F7   &kp F8     &kp F9  &kp F10  &kp PRINTSCREEN
-&kp TAB         &kp F12       &kp DEL         &kp UP_ARROW    &kp BACKSPACE    &kp ENTER      &trans            &kp F11        &kp F12  &trans     &trans  &trans   &kp SCROLLLOCK
-&kp LEFT_SHIFT  &kp F10       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME       &trans            &kp END        &trans   &trans     &trans  &trans   &trans
-&kp LCTRL       &kp Z         &kp X           &kp C           &kp V            &trans         &trans            &trans         &trans   &trans     &trans  &trans   &mo 3
-&kp C_MUTE      &kp LEFT_WIN  &mo 2           &kp LEFT_ALT    &to 0            &lt 2 SPACE    &kp K_CALCULATOR  &kp BACKSPACE  &to 0    &kp ENTER  &trans  &trans
+&trans      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &trans            &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &kp PRINTSCREEN
+&trans      &trans     &trans     &trans     &trans     &trans       &trans            &trans    &trans    &trans  &trans     &trans   &kp SCROLLLOCK
+&trans      &kp HOME   &kp F9     &kp F10    &kp F11    &kp F12      &trans            &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END  &trans
+&trans      &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &trans            &trans    &trans    &trans  &trans     &trans   &mo 3
+&kp C_MUTE  &trans     &trans     &trans     &trans     &trans       &kp K_CALCULATOR  &trans    &trans    &trans  &trans     &trans
             >;
 
             display-name = "layer1";
@@ -66,11 +66,11 @@
 
         layer_2 {
             bindings = <
-&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5    &msc SCRL_UP     &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0   &kp RIGHT_BRACKET
-&kp TAB         &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5    &msc SCRL_DOWN   &trans         &trans        &trans            &trans             &trans         &kp NON_US_BACKSLASH
-&kp LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &msc SCRL_LEFT   &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT
-&kp LCTRL       &kp SEMI      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL       &msc SCRL_RIGHT  &trans         &trans        &kp COMMA         &kp PERIOD         &kp SLASH      &trans
-&trans          &kp LEFT_WIN  &trans            &kp LEFT_ALT       &to 0         &kp SPACE       &mkp LCLK        &kp BACKSPACE  &to 0         &kp ENTER         &trans             &trans
+&kp GRAVE  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp RIGHT_BRACKET
+&trans     &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)     &trans  &trans         &trans        &trans        &trans        &trans        &trans
+&trans     &kp BSLH       &kp LS(LBRC)  &kp LS(RBRC)   &kp LBKT      &kp RBKT         &trans  &trans         &trans        &trans        &trans        &trans        &trans
+&trans     &kp SEMI       &kp SQT       &kp FSLH       &kp MINUS     &kp EQUAL        &trans  &trans         &trans        &trans        &trans        &trans        &trans
+&trans     &trans         &trans        &trans         &trans        &trans           &trans  &trans         &trans        &trans        &trans        &trans
             >;
         };
 
@@ -81,6 +81,27 @@
 &trans      &trans        &trans        &trans        &trans        &trans          &trans       &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans       &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &kp C_SLEEP  &trans           &trans           &trans           &trans           &trans
+            >;
+        };
+
+        layer_4 {
+            display-name = "layer1";
+            bindings = <
+&kp ESCAPE      &kp F1        &kp F2          &kp F3          &kp F4           &kp F5         &trans            &kp F6         &kp F7   &kp F8     &kp F9  &kp F10  &kp PRINTSCREEN
+&kp TAB         &kp F12       &kp DEL         &kp UP_ARROW    &kp BACKSPACE    &kp ENTER      &trans            &kp F11        &kp F12  &trans     &trans  &trans   &kp SCROLLLOCK
+&kp LEFT_SHIFT  &kp F10       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME       &trans            &kp END        &trans   &trans     &trans  &trans   &trans
+&kp LCTRL       &kp Z         &kp X           &kp C           &kp V            &trans         &trans            &trans         &trans   &trans     &trans  &trans   &mo 3
+&kp C_MUTE      &kp LEFT_WIN  &mo 2           &kp LEFT_ALT    &to 0            &lt 2 SPACE    &kp K_CALCULATOR  &kp BACKSPACE  &to 0    &kp ENTER  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&kp GRAVE       &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5    &msc SCRL_UP     &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0   &kp RIGHT_BRACKET
+&kp TAB         &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp NUMBER_5    &msc SCRL_DOWN   &trans         &trans        &trans            &trans             &trans         &kp NON_US_BACKSLASH
+&kp LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &msc SCRL_LEFT   &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT
+&kp LCTRL       &kp SEMI      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL       &msc SCRL_RIGHT  &trans         &trans        &kp COMMA         &kp PERIOD         &kp SLASH      &trans
+&trans          &kp LEFT_WIN  &trans            &kp LEFT_ALT       &to 0         &kp SPACE       &mkp LCLK        &kp BACKSPACE  &to 0         &kp ENTER         &trans             &trans
             >;
         };
     };
