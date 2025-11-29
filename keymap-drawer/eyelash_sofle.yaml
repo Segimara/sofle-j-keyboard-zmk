@@ -80,9 +80,9 @@ layers:
   - F10
   - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F12
+  - F11
   - $$mdi:backspace-reverse-outline$$
-  - F5
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -94,10 +94,10 @@ layers:
   - SCROLLLOCK
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
-  - F9
-  - F10
-  - F11
-  - F12
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -131,7 +131,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Symb:
-  - {t: '`', s: '~'}
+  - $$mdi:keyboard-esc$$
   - Sft+!
   - Sft+@
   - Sft+#
