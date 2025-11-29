@@ -90,11 +90,11 @@
 
         Func {
             bindings = <
-&kp ESC     &kp F1     &kp F2      &kp F3     &kp F4         &kp F5       &trans            &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &kp PRINTSCREEN
-&trans      &trans     &kp DELETE  &kp F5     &kp BACKSPACE  &kp ENTER    &trans            &trans    &trans    &trans  &trans     &trans   &kp SCROLLLOCK
-&trans      &kp HOME   &kp F9      &kp F10    &kp F11        &kp F12      &trans            &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END  &trans
-&trans      &kp LC(Z)  &kp LC(X)   &kp LC(C)  &kp LC(V)      &kp LC(B)    &trans            &trans    &trans    &trans  &trans     &trans   &mo 3
-&kp C_MUTE  &trans     &to 0       &trans     &to 0          &trans       &kp K_CALCULATOR  &trans    &to 0     &trans  &trans     &trans
+&kp ESC     &kp F1     &kp F2     &kp F3      &kp F4         &kp F5       &trans            &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &kp PRINTSCREEN
+&trans      &kp F12    &kp F11    &kp DELETE  &kp BACKSPACE  &kp ENTER    &trans            &trans    &trans    &trans  &trans     &trans   &kp SCROLLLOCK
+&trans      &kp HOME   &kp LEFT   &kp UP      &kp DOWN       &kp RIGHT    &trans            &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END  &trans
+&trans      &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)      &kp LC(B)    &trans            &trans    &trans    &trans  &trans     &trans   &mo 3
+&kp C_MUTE  &trans     &to 0      &trans      &to 0          &trans       &kp K_CALCULATOR  &trans    &to 0     &trans  &trans     &trans
             >;
 
             display-name = "Func";
@@ -102,11 +102,11 @@
 
         Symb {
             bindings = <
-&kp GRAVE  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp RIGHT_BRACKET
-&trans     &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)     &trans  &trans         &trans        &trans        &trans        &trans        &trans
-&trans     &kp BSLH       &kp LS(LBRC)  &kp LS(RBRC)   &kp LBKT      &kp RBKT         &trans  &trans         &trans        &trans        &trans        &trans        &trans
-&trans     &kp SEMI       &kp SQT       &kp FSLH       &kp MINUS     &kp EQUAL        &trans  &trans         &trans        &trans        &trans        &trans        &trans
-&trans     &trans         &to 0         &trans         &to 0         &trans           &trans  &trans         &to 0         &trans        &trans        &trans
+&kp ESCAPE  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp RIGHT_BRACKET
+&trans      &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)     &trans  &trans         &trans        &trans        &trans        &trans        &trans
+&trans      &kp BSLH       &kp LS(LBRC)  &kp LS(RBRC)   &kp LBKT      &kp RBKT         &trans  &trans         &trans        &trans        &trans        &trans        &trans
+&trans      &kp SEMI       &kp SQT       &kp FSLH       &kp MINUS     &kp EQUAL        &trans  &trans         &trans        &trans        &trans        &trans        &trans
+&trans      &trans         &to 0         &trans         &to 0         &trans           &trans  &trans         &to 0         &trans        &trans        &trans
             >;
         };
 
