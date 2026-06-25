@@ -73,6 +73,15 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Isac {
+            bindings = <&none>;
+            key-positions = <22 28 27 42>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -138,6 +147,16 @@
 &kp LEFT_SHIFT  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0    &msc SCRL_LEFT   &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT
 &kp LCTRL       &kp SEMI      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS     &kp EQUAL       &msc SCRL_RIGHT  &trans         &trans        &kp COMMA         &kp PERIOD         &kp SLASH      &trans
 &trans          &kp LEFT_WIN  &trans            &kp LEFT_ALT       &to 0         &kp SPACE       &mkp LCLK        &kp BACKSPACE  &to 0         &kp ENTER         &trans             &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp GRAVE  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &kp BSLH
+&kp TAB    &kp Q   &kp W   &kp E     &kp R   &kp T        &kp TAB    &kp Y     &kp U     &kp UP     &kp O      &kp P     &kp LBKT
+&kp LSHFT  &kp A   &kp S   &kp D     &kp F   &kp G        &kp J      &kp H     &kp LEFT  &kp DOWN   &kp RIGHT  &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z   &kp X   &kp C     &kp V   &kp B        &kp B      &kp N     &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RALT
+&kp D      &trans  &trans  &kp LALT  &to 0   &kp SPACE    &trans     &kp BSPC  &trans    &kp RET    &kp LBKT   &kp RBKT
             >;
         };
     };
